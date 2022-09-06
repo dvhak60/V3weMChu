@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/images/paul-green-unsplash.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+/* * TOP NAVIGATION BAR */
+.navbar {
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  height: 60px;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  float: left;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.left-navlinks-list li a {
+  display: inline;
+  float: left;
+}
+
+.right-navlinks-list li a {
+  display: inline;
+  float: right;
+}
+
+.navbtn {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.title:hover {
+  background: #e66944;
+  color: black;
+}
+
+.navbtn:hover {
+  background: #e66944;
+  color: black;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-navlinks {
+    display: none;
+  }
+  .left-navlinks {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    float: right;
+  }
+}
+
+/* * FOOTER */
+footer {
+  position: absolute;
+  top: 100vh;
+  transform: translateY(-100%);
+  width: 100%;
+}
+
+.photo-credits {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: fit-content;
+  padding: 5px;
+  margin: auto;
+  margin-top: 5px;
+  float: right;
+}
+
+.photo-credits a:link {
+  color: #abe3ff;
+}
+
+.photo-credits a:visited {
+  color: #eeb0ff;
+}
+
+/* * HOME PAGE */
+.welcome-message {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: fit-content;
+  padding: 5px;
+  margin: auto;
+  margin-top: 5%;
+  /* height: 100%; */
+  justify-content: center;
+  text-align: center;
+}
+
+/* * About */
+.picofme {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.sourcecode {
+  color: white;
+  max-width: fit-content;
+  padding: 5px;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.sourcecode a:link {
+  color: #abe3ff;
+}
+
+.sourcecode a:visited {
+  color: #eeb0ff;
+}
+
+/* * PASSWORD GENERATOR */
+
+#password-generator {
+  padding: 30px;
+  color: white;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  overflow: hidden;
+  overflow-wrap: break-word;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  justify-content: center;
+}
+
+#pg-label {
+  height: fit-content;
+  margin: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.showpassword-div {
+  color: black;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  background-color: white;
+  background-color: -moz-field;
+  border: 1px solid darkgray;
+  box-shadow: 1px 1px 1px 0 lightgray inset;
+  font: x-large -moz-fixed;
+  font: -webkit-small-control;
+  margin-top: 5px;
+  padding: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.pg-info {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  color: black;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+select {
+  /*  "password length drop down box" */
+  margin: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+option {
+  background: #232526;
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e66944;
+  color: black;
+  cursor: pointer;
+}
+
+/* * CREATE PROFILE PAGE */
+.create-profile {
+  color: white;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  text-align: center;
+  padding: 20px;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.formbox {
+  padding: 20px;
+}
+
+/* * CONTACT PAGE */
+.contactformbox {
+  display: grid;
+  padding: 20px;
+}
+
+.contact-me {
+  color: white;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  padding: 20px;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.sendbutton {
+  max-width: fit-content;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-size: large;
+  padding: 3%;
+}
+
+/* * DROPDOWN MENU */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: auto;
+  right: 1px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #e66944;
+  color: black;
+}
+
+/* Show the dropdown menu (use JS to add this class 
+to the .dropdown-content container when the user clicks 
+on the dropdown button) */
+.show {
+  display: block;
+}
+
+/* *BUTTON * */
+
+.button {
+  position: relative;
+  padding: 8px 16px;
+  background: #009579;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button:active {
+  background: #007a63;
+}
+
+.button__text {
+  font: bold 20px 'Quicksand', san-serif;
+  color: #ffffff;
+  transition: all 0.2s;
+}

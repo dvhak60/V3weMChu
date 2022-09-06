@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About</title>
+  </head>
+
+  <body>
+    <!-- * Navbar -->
+    <nav class="navbar">
+      <a href="/index.html" class="title">my-website</a>
+
+      <div class="left-navlinks">
+        <ul class="left-navlinks-list">
+          <!-- <li><a class="navbtn" href="">Blog</a></li> -->
+          <li>
+            <a class="navbtn" href="/html/passwordgenerator.html"
+              >Password Generator</a
+            >
+          </li>
+          <!-- <li><a class="navbtn" href="">Guide</a></li> -->
+        </ul>
+      </div>
+      <div class="right-navlinks">
+        <ul class="right-navlinks-list">
+          <li>
+            <a class="navbtn" href="/html/createprofile.html">Create Profile</a>
+          </li>
+          <li><a class="navbtn" href="">About</a></li>
+          <li><a class="navbtn" href="/html/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+      <!-- * mobile view navbar -->
+      <div class="mobile-menu">
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/index.html">Home</a>
+            <!-- <a href="#">Blog</a> -->
+            <a href="/html/passwordgenerator.html">Password Generator</a>
+            <!-- <a href="#">Guide</a> -->
+            <a href="/html/createprofile.html">Create Profile</a>
+            <a href="/html/about.html">About</a>
+            <a href="/html/contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- * ABOUT SCREEN -->
+    <div class="welcome-message">
+      <h2>This is me</h2>
+      <br />
+      <p class="sourcecode">
+        <a href="https://github.com/dvhak60/V3weMChu">Source code</a>
+      </p>
+      <br />
+      <img class="picofme" src="/images/me.png" alt="me-img" />
+    </div>
+    <!-- * FOOTER-->
+    <footer>
+      <p class="photo-credits">
+        Wallpaper Credits:
+        <a href="https://unsplash.com/@pgreen1983">Paul Green</a>
+      </p>
+    </footer>
+  </body>
+</html>
